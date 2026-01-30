@@ -1,7 +1,7 @@
 # 99 Bottles of Beer 🍻
 # Codédex
 
-for i in range(99, 0, -1):
+for i in range(99, 98, -1):
   print(f'{i} bottles of beer on the wall')
   print(f'{i} bottles of beer')
   print('Take one down, pass it around')
