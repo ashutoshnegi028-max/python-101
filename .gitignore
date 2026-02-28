@@ -1,10 +1,3 @@
-.DS_Store
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+__pycache__/
+*.pyc
+data/
