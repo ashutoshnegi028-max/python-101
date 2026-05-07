@@ -16,7 +16,12 @@
 2. `python -m venv .venv && source .venv/bin/activate`
 3. `pip install -r requirements.txt`
 4. `cp .env.example .env`
-5. `uvicorn app.main:app --reload`
+5. **Database initialization:**
+   - Create the PostgreSQL database: `createdb workforce_tracker`
+   - Confirm DB connection settings in `.env` (DATABASE_URL should point to your Postgres instance)
+   - Apply the schema: `psql -d workforce_tracker -f sql/schema.sql`
+   - Seed with dummy data: `psql -d workforce_tracker -f sql/dummy_data.sql`
+6. `uvicorn app.main:app --reload`
 
 ### Frontend
 1. `cd frontend`
